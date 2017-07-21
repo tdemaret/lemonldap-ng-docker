@@ -22,7 +22,7 @@ RUN apt -y update \
     && dpkg -i dumb-init_${DUMBINITVERSION}_amd64.deb \
     && apt install -f -y \
     && echo "# Install LemonLDAP::NG package" \
-    && apt -y install  \
+    && apt -y install nginx-full \
     && apt clean \
     && rm -fr /var/lib/apt/lists/*
 
